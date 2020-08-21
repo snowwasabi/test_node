@@ -1,0 +1,17 @@
+{
+  "name": "FirstProject",
+  "version": "1.0.0",
+  "description": "first project for node.js",
+  "main": "index.js",
+  "dependencies": {
+    "puppeteer": "^5.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Litvinenko Alexandr <snowwasabi@icloud.com>",
+  "license": "ISC"
+}
