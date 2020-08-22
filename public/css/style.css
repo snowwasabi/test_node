@@ -4,7 +4,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
-  background: #ffffff url("img/keks-background.jpg") no-repeat 50% 0;
+  background: #ffffff url("../../img/keks-background.jpg") no-repeat 50% 0;
 }
 
 h1 {
@@ -68,17 +68,17 @@ h2 {
 
 .feature-kitten {
   padding-top: 60px;
-  background-image: url("img/bottle.svg");
+  background-image: url("../../img/bottle.svg");
 }
 
 .feature-cat {
   padding-top: 60px;
-  background-image: url("img/cat.svg");
+  background-image: url("../../img/cat.svg");
 }
 
 .feature-train {
   padding-top: 60px;
-  background-image: url("img/whistle.svg");
+  background-image: url("../../img/whistle.svg");
 }
 
 .skills-list {

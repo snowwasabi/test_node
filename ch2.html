@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chapter 2. Основы HTML</title>
+	<script src="anime.js"></script>
+	<link rel="stylesheet" href="Lk-1.css">
+</head>
+<body>
+	<h1>Основы HTML</h1>
+		<h3>Элемент &lt;p&gt;</h3>
+		<p>&lt;p&gt;&lt;/p&gt; - создать параграф.</p>
+		<p class="code"> 
+		&lt;html&gt;<br/>
+		&lt;head&gt;<br/>
+		&lt;title&gt; Первая страница &lt;/title&gt;<br/>
+		&lt;/head&gt;<br/>
+		&lt;body&gt;<br/>
+		&lt;p&gt;Параграф текста.&lt;/p&gt; <br/>
+		&lt;p&gt;Ещё один параграф текста.&lt;/p&gt; <br/>
+		&lt;/body&gt;<br/>
+		&lt;/html&gt;
+		</p>
+		<h3>Перенос строки</h3>
+		<p>Тег &lt;br/p&gt; - добавить отдельную строку, когда нет надобности создовать новый параграф:</p>
+		<p class="code"> 
+		&lt;html&gt;<br/>
+		&lt;head&gt;<br/>
+		&lt;title&gt; Первая страница &lt;/title&gt;<br/>
+		&lt;/head&gt;<br/>
+		&lt;body&gt;<br/>
+		&lt;p&gt;Параграф текста.&lt;/p&gt; <br/>
+		&lt;p&gt;Ещё один параграф текста.&lt;/p&gt; <br/>
+		&lt;p&gt;Здесь &lt;br/&gt; перенос строки.&lt;/p&gt; <br/>
+		&lt;/body&gt;<br/>
+		&lt;/html&gt;
+		</p>
+		<h2>Элементы форматирования</h2>
+		<p>Элементы форматирования были созданы для отображения разных стилей текста:</p>
+		<p class="code"> 
+		&lt;html&gt;<br/>
+		&lt;head&gt;<br/>
+		&lt;title&gt; Первая страница &lt;/title&gt;<br/>
+		&lt;/head&gt;<br/>
+		&lt;body&gt;<br/>
+		&lt;p&gt;Обычный текст&lt;/p&gt; <br/>
+		&lt;p&gt;&lt;b&gt;Текст жирным шрифтом&lt;/b&gt;&lt;/p&gt;<br/>
+		&lt;p&gt;&lt;big&gt;Текст крупным шрифтом&lt;/big&gt;&lt;/p&gt;<br/>
+		&lt;p&gt;&lt;i&gt;Текст курсивом&lt;/i&gt;&lt;/p&gt;<br/>
+		&lt;p&gt;&lt;small&gt;Текст мелким шрифтом&lt;/small&gt;&lt;/p&gt;<br/>
+		&lt;p&gt;&lt;strong&gt;Важный текст&lt;/strong&gt;&lt;/p&gt;<br/>
+		&lt;p&gt;&lt;sub&gt;Подстрочный текст&lt;/sub&gt;&lt;/p&gt;<br/>
+		&lt;p&gt;&lt;sup&gt;Надстрочный текст&lt;/sup&gt;&lt;/p&gt;<br/>
+		&lt;p&gt;&lt;ins&gt;Вставленный текст (подчёркнутый)&lt;/ins&gt;&lt;/p&gt;<br/>
+		&lt;p&gt;&lt;del&gt;Удалённый текст (зачёркнутый)&lt;/del&gt;&lt;/p&gt;<br/>
+		&lt;/body&gt;<br/>
+		&lt;/html&gt;
+		</p>
+		<p>
+		Тег &lt;strong&gt; - фразовый тег. Он обрамляет важный текст.
+		</p>
+		<p>
+		Браузеры отображают &lt;strong&gt; как &lt;b&gt; и &lt;em&gt; как &lt;i&gt;.<br/>
+		Тем менее, эти теги имеют различные функции:<br/>
+		&lt;b&gt; и &lt;i&gt; обозначают текст жирным шрифтом и курсивом соответственно, тогда как &lt;strong&gt; и &lt;em&gt; указывают на важность текста.
+		</p>
+		<h3>Заголовки</h3>
+		<p>
+		В HTML спользуеся 6 уровней заголовков, которые организованы по уровню важности:<br/>
+		&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; и &lt;h6&gt;.<br/>
+		В нижеприведённом коде использованы все 6 заголовков:
+		</p>
+		<p class="code">
+		&lt;html&gt;<br/>
+		&lt;head&gt;<br/>
+		&lt;title&gt; Первая страница &lt;/title&gt;<br/>
+		&lt;/head&gt;<br/>
+		&lt;body&gt;<br/>
+		&lt;h1&gt;Заголовок 1&lt;/h1&gt; <br/>
+		&lt;h2&gt;Заголовок 2&lt;/h2&gt; <br/>
+		&lt;h3&gt;Заголовок 3&lt;/h3&gt; <br/>
+		&lt;h4&gt;Заголовок 4&lt;/h4&gt; <br/>
+		&lt;h5&gt;Заголовок 5&lt;/h5&gt; <br/>
+		&lt;h6&gt;Заголовок 6&lt;/h6&gt; <br/>
+		&lt;/body&gt;<br/>
+		&lt;/html&gt;
+		</p>
+		<p>
+		Поисковые системы придают заголовкам большое значение: используют их для индексации структуры страницы и её контента.
+		</p>
+		<h3>Линии</h3>
+		<p>
+		Чтобы добавить вдокумент горизонтальную линию, используется тег &lt;hr/&gt;
+		</p>
+		<p class="code">
+		&lt;html&gt;<br/>
+		&lt;head&gt;<br/>
+		&lt;title&gt; Первая страница &lt;/title&gt;<br/>
+		&lt;/head&gt;<br/>
+		&lt;body&gt;<br/>
+		&lt;h1&gt;Заголовок 1&lt;/h1&gt;<br/>
+		&lt;h2&gt;Заголовок 2&lt;/h2&gt;<br/>
+		&lt;h3&gt;Заголовок 3&lt;/h3&gt;<br/>
+		&lt;h4&gt;Заголовок 4&lt;/h4&gt;<br/>
+		&lt;h5&gt;Заголовок 5&lt;/h5&gt;<br/>
+		&lt;h6&gt;Заголовок 6&lt;/h6&gt;<br/>
+		&lt;p&gt;Параграф текста.&lt;/p&gt;<br/>
+		&lt;hr/&gt;<br/>
+		&lt;p&gt;Параграф текста.&lt;/p&gt;<br/>
+		&lt;/body&gt;<br/>
+		&lt;/html&gt;
+		</p>
+		<p>
+		В HTML5, тег &lt;hr/&gt; обрамляет тематический разрыв.
+		</p>
+		<h3>Коментарии</h3>
+		<p>
+		Комментарии браузером не отображаются, но они помогают в составлении документа и дают возможность добавить описания, делать заметки, напоминания и прочее.
+		</p>
+		&lt;!-- Текст Вашего коментария --&gt;
+		<p>Пример:</p>
+		<p class="code"> 
+		&lt;html&gt;<br/>
+		&lt;head&gt;<br/>
+		&lt;title&gt; Первая страница &lt;/title&gt;<br/>
+		&lt;/head&gt;<br/>
+		&lt;body&gt;<br/>
+		&lt;p&gt;Параграф текста.&lt;/p&gt;<br/>
+		&lt;hr/&gt;<br/>
+		&lt;p&gt;Ещё один параграф текста.&lt;/p&gt;<br/>
+		&lt;!-- Текст Вашего коментария --&gt;
+		&lt;/body&gt;<br/>
+		&lt;/html&gt;
+		</p>
+		<h2>Элементы<h2>
+		<h3>HTML - элементы</h3>
+		<p>
+		Это строительные блоки любого HTML-документа.<br/>
+		HTML - документ состоит из <b>открывающего</b> и <b>закрывающего</b> тегов, которые обромляют его <b>содержимое</b>.<br/>
+		HTML - окумент может состоять из вложенных в друг друга HTML - элементов.
+		</p>
+		<p class="code">
+		&lt;html&gt;<br/>
+		&lt;head&gt;<br/>
+		&lt;title&gt; Первая страница &lt;/title&gt;<br/>
+		&lt;/head&gt;<br/>
+		&lt;body&gt;<br/>
+		&lt;p&gt;Параграф текста.&lt;br/&gt;&lt;/p&gt;<br/>
+		&lt;/body&gt;<br/>
+		&lt;/html&gt;
+		</p>
+		<h2>Атрибуты<h2>
+		<h3>HTML - атрибуты</h3>
+		<p>
+		Атрибуты содержат <b>дополнительную информацию</b> об элементе или теге, 
+		а также изменяют их. Большинство атрибутов имеют значения; значение <b>изменяет</b> атрибут.
+		</p>
+		<p>
+		&lt;p align="center"&gt;<br/>
+		Этот текст выровнен по центру<br/>
+		&lt;/p&gt;
+		</p>
+		<p>
+		В этом примере значение атрибута "center" указывает на то, что содержимое элемента р 
+		долэжно быть выровнено по центру.
+		</p>
+		<p>
+		Атрибуты всегда пишутся в открывающем теге и имеют следующую парную структуру:<br/>
+		name="value"
+		</p>
+		<h3>Единицы измерений в атрибутах</h3>
+		<p>
+		В качестве примера, добавим в HTML-документ горизонтальную линию шириной в 
+		50 пикселей.<br/>
+		Для этого нам понадобится атрибут ширины (width)
+		</p>
+		<p>
+		&lt;hr width="50px" /&gt;
+		</p>
+		<p>
+		Ширина элемента может быть определена в процентах:
+		</p>
+		<p>
+		&lt;hr width="50%" /&gt;
+		</p>
+		<h3>Атрибут выравнивания</h3>
+		<p>
+		Арибут выравнивания указывает на то, как текст будет выровнен в документе.<br/>
+		В приведённом ниже примере параграф текста будет выровнен по центру, а строка - 
+		по её правому краю.
+		<p class="code">
+		&lt;html&gt;<br/>
+		&lt;head&gt;<br/>
+		&lt;title&gt;Атрибуты&lt;/title&gt;<br/>
+		&lt;/head&gt;<br/>
+		&lt;body&gt;<br/>
+		&lt;p aligan="center"&gt;Параграф текста.&lt;br/&gt;<br/>
+		&lt;hr width="10%" aligan="right" /&gt;Строка текста<br/>
+		&lt;/p&gt;
+		&lt;/body&gt;<br/>
+		&lt;/html&gt;
+		</p>
+		<p>
+		Атрибут aligan тега <ins>&lt;р&gt;</ins> не поддерживается в HTML5
+		</p>
+		<p>
+		</p>
+
+</body>
+</html>

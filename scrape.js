@@ -21,8 +21,7 @@ let scrape = async () => {
     });
 
     browser.close();
-    return result; // Возвращае
-    // м данные
+    return result; // Возвращаем данные
 };
 
 scrape().then((value) => {

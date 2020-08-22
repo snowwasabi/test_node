@@ -1,15 +1,27 @@
-var fs = require('fs');
+var express = require('express');
 
+var app = express();
 
-//подключение к локальному серверу
-var http = require('http');
+//Указываем view engine (движок) для шаблонизации html
+//в данном случае 'ejs'
+app.set('view engine', 'ejs');
 
-var server = http.createServer(function (req,res) {
-    console.log("URL страницы: " + req.url);
-    res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
-    var myReadShort = fs.createReadStream(__dirname + '/index.html', 'utf8');
-    myReadShort.pipe(res);
+app.use('/public', express.static('public'));
+
+app.get('/', function (req, res){
+    res.sendFile(__dirname + "/index.html");
+})
+
+app.get('/lk', function (req, res){
+    res.sendFile(__dirname + "/newindex.html");
+})
+
+app.get('/lk/ch_one', function (req, res){
+    res.render('ch_one');
+})
+
+app.get('/lk/:id', function (req, res){
+    res.render('ch_one', {chId: req.params.id});
 });
 
-server.listen(3000, '127.0.0.1');
-console.log("Мы отслеживаем порт 3000");
+app.listen(3000);

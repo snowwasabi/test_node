@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Chaptr 1. Введение</title>
+		<script src="../../../../HTML/git_test/anime.js"></script>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		
+		<!--Моя первая анимация-->
+		<!-- <div id="container">
+			<div id="box"></div>
+		</div> -->
+		
+		<button onclick="exit()">Я устал! Всё заебало! ВЫЙТИ ОТСЮДА!</button>
+
+		<h1>Введение</h1>
+
+		<p>
+		HTML "HyperText MarkupLanguage" - язык гипертекстовой разметки.<br/>
+		В языке разметки с помощью тегов программируется контент (содержимое).<br/>
+		 Пример HTML-тега:
+		</p>
+
+		<p class="code"> &lt;p&gt;Абзац текста &lt;/p&gt;</p>
+		
+		<h2>1. Структура веб-страницы.</h2>
+		
+		<p>
+		У HTML-документа есть 2 тега: открывающий и закрывающий.
+		</p>
+		
+		<p class="code">
+			&lt;html&gt;<br/>
+			...<br/>
+			&lt;/html&gt;
+		</p>
+		
+		<h3>Тег &lt;head&gt;</h3>
+		
+		<p>
+		За открывающим тегом следует заголовок документа, который определяется открытыми и изакрытыми тегами head.<br/>
+		Заголовок содержит все не визуальные элементы HTML-документа, которые управляют отображением страницы.
+		</p>
+		<p class="code">
+		&lt;html&gt;<br/>
+		&lt;head&gt;...&lt;/head&gt;<br/>
+		&lt;/html&gt;
+		</p>
+		<h3>Тег &lt;body&gt;</h3>
+		<p>
+		За тегом заголовка head следует тег тела документа body. В теге body заключаются все элементы, отвечающие за визуальное и структурное оформление документа.<br/>
+		Заголовки, параграфы, списки, цитаты, изображения, ссылки и т.д. - элементы, которые могут помещатся между тегами body.
+		</p>
+		<p class="code">
+		&lt;html&gt;<br/>
+		&lt;head&gt;<br/>
+		&lt;/head&gt;<br/>
+		&lt;body&gt;<br/>
+		&lt;/body&gt;<br/>
+		&lt;/html&gt;
+		</p>
+		<h2>2. HTML-фаил.</h2>
+		<p>
+		Это обычный текстовый фаил.<br/>
+		Названия HTML-файлов должны заканчиватся на .html или .htm .
+		</p>
+		<p>
+		&lt;html&gt;<br/>
+		&lt;head&gt;<br/>
+		&lt;/head&gt;<br/>
+		&lt;body&gt;<br/>
+		Некоторый текст<br/>
+		&lt;/body&gt;<br/>
+		&lt;/html&gt;</p>
+		<div id="comment">
+			<p>Для отображения тега на веб- странице нужно использовать &lt;...&gt;</p>
+		</div>
+		<h3>Тег &lt;title&gt;</h3>
+		<p>
+		Чтобы поместить заголовок страницы на вкладку браузера, нужно в блок дукумента head добавить элемент &lt;title&gt;
+		</p> 
+		<p class="code">
+		&lt;html&gt;<br/>
+		&lt;head&gt;<br/>
+		&lt;title&gt; Первая страница &lt;/title&gt;</br>
+		&lt;/head&gt;<br/>
+		&lt;body&gt;<br/>
+		Некоторый текст<br/>
+		&lt;/body&gt;<br/>
+		 &lt;/html&gt;
+		</p>
+		<div id="comment">
+			<p>
+			title служит описанием страницы и используется поисковыми системами.<br/>
+			Чтобы сообщить браузеру кодировку HTML-страницы необходимо внутрь блока &lt;head&gt; использовать тег:
+			</p>
+			<p class="code">&lt;meta charset="имя кодировки"&gt;</p>
+			<p>utf-8 - распрастранённая современная кодировка.</p>
+		</div>
+		
+		<a href="#" class="previous">&laquo; Previous</a>
+		<a href="#" class="next">Next &raquo;</a>
+
+
+	</body>
+</html>

@@ -4,6 +4,9 @@
   "description": "first project for node.js",
   "main": "index.js",
   "dependencies": {
+    "cowsay": "^1.4.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
     "puppeteer": "^5.2.1"
   },
   "devDependencies": {},
