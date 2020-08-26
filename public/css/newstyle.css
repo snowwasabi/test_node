@@ -1,0 +1,80 @@
+* {padding: 0; margin:0;} /*Убрать отступы вокруг страницы*/
+
+body {
+	background-color: #CD78B7;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.page {
+	overflow: hidden; /*Убирает горизонтальный скрол*/
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+}
+
+.center{
+	display: grid;
+	grid-template-columns: auto 1fr;
+	margin: 0 30px;
+}
+
+
+
+.nav {
+	background-color: #788CCD;
+	padding: 40px 20px;
+	width: auto;
+
+}
+
+.content {
+	background-color: #78B7CD;
+	padding: 40px 20px;
+}
+
+.header {
+	width: auto;
+	
+
+}
+
+.header,
+.footer {
+	background-color: #8E78CD;
+	padding: 20px;
+
+}
+
+.header p {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin: 0 5px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.html{
+	padding-top: 60px;
+	background-image: url(img/html.png);
+	background-size: 30%;
+}
+
+.css{
+	padding-top: 60px;
+	background-image: url(img/css.png);
+	background-size: 20%;
+}
+
+.js{
+	padding-top: 60px;
+	background-image: url(img/js.png);
+	background-size: 28%;
+}
+
